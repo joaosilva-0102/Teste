@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-tasking Website</title>
+    <style>
+        body {
+            font: normal 30pt arial;
+            background-color: cadetblue;
+            color: rgb(90, 87, 87);
+        }
+        header {
+            padding: 40px;
+            font: bold 70pt arial;
+            text-align: center;
+            color: lightgrey;
+        }
+        section#s1 {
+            background-color: blue;
+            width: 1900px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        section#s2 {
+            background-color: lightblue;
+            width: 1900px;
+            height: 1000px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        div#p1{
+            font: normal 40pt arial;
+            text-align: center;
+        }
+        div#p2{
+            font: normal 100px arial;
+            text-align: center;
+            padding: 50px;
+        }
+        input#i1 {
+            width: 400px;
+            margin-left: 40px;
+            height: 100px;
+            margin-top: 30px;
+            background-color: rgba(24, 24, 245, 0.281);
+            border-radius: 10px;
+        }
+        section#corpo {
+            background-color: white;
+            width: 500px;
+            margin-left: 1000px;
+            text-align: center;
+        }
+        div#corpo {
+           font: bold 50pt arial;
+           text-align: center;
+           margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="s1">
+        <header>Multitasking Website</header>
+    </section>
+    <section id="s2">
+        <div id="p1">
+            <input type="button" id="i1" value="HORAS" onclick="horas()">
+            <input type="button" id= "i1" value="VERIFICADOR DE IDADE" onclick="idade()">
+            <input type="button" id= "i1" value="CALCULADORA MÉDIA" onclick="calc()">
+            <input type="button" id= "i1" value="TABUADA" onclick="tab()">
+        </div>
+        <div id="p2"></div>
+
+    </section>
+    <script>
+        function horas() {
+            var data = new Date()
+            var hora = data.getHours()
+            var minuto = data.getMinutes()
+            var segundo = data.getSeconds()
+            var res = document.getElementById('p2')
+            res.innerHTML += (`${hora}:${minuto}:${segundo}`)
+        }
+        function idade() {
+            
+        }
+        
+    </script>
+    
+</body>
+</html>

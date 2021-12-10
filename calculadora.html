@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            font: normal 30pt arial;
+            background-color:lightgrey;
+            color: rgb(44, 44, 44);
+        }
+        h1 {
+            font: normal 50pt arial;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        section#s1 {
+            background-color: darkgreen;
+            width: 540px;
+            margin: auto;
+            padding: 15px;
+            border-radius: 15px;
+
+        }
+        section#s2{
+            width: 540px;
+            background-color: white;
+            border-radius: 10px;
+            font: normal 70pt arial;
+            height: 100px;
+            background-color: black;
+            color: white;
+        }
+        input {
+            width: 100px;
+            padding: 40px;
+            margin-left: 20px;
+            background-color: lightgrey;
+            border-radius: 15px;
+            margin-top: 25px;
+        }
+        
+        div#res {
+            text-align: left;
+            margin-left: 15px;
+       
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <section id='s1'>
+        <section id='s2'>
+            <div id='res'></div>
+        </section>
+        <div>
+            <input type="button"  value= 1 onclick="n1()">
+            <input type="button"  value="2" onclick="n2()">
+            <input type="button"  value="3" onclick="n3()">
+            <input type="button"  value="+" onclick="mais()"></br>
+            <input type="button"  value="4" onclick="n4()">
+            <input type="button"  value="5" onclick="n5()">
+            <input type="button"  value="6" onclick="n6()">
+            <input type="button"  value="-" onclick="menos()"></br>
+            <input type="button"  value="7" onclick="n7()">
+            <input type="button"  value="8" onclick="n8()">
+            <input type="button"  value="9" onclick="n9()">
+            <input type="button"  value="X" onclick="mult()"></br>
+            <input type="button"  value="C" onclick="nc()">
+            <input type="button"  value="0" onclick="n0()">
+            <input type="button"  value="=" onclick="igual">
+            <input type="button"  value="/" onclick="divi()">
+        </div>
+    </section>
+
+    <script>
+        while(res.innerHTML.value.length < 11){
+        function n1() {
+            var n1 = 1
+            var res = document.getElementById('res')
+            res.innerHTML += (`${n1}`)
+        }
+        function n2() {
+            var n2 = 2
+            var res = document.getElementById('res')
+            res.innerHTML += (`${n2}`)
+        }
+        function n3() {
+            var n3 = 3
+            var res = document.getElementById('res')
+            res.innerHTML += (`${n3}`)
+        }
+        function n4() {
+            var n4 = 4
+            var res = document.getElementById('res')
+            res.innerHTML += (`${n4}`)
+        }
+        function n5() {
+            var n5 = 5
+            var res = document.getElementById('res')
+            res.innerHTML += (`${n5}`)
+        }
+        function n6() {
+            var n6 = 6
+            var res = document.getElementById('res')
+            res.innerHTML += (`${n6}`)
+        }
+        function n7() {
+            var n7 = 7
+            var res = document.getElementById('res')
+            res.innerHTML += (`${n7}`)
+        }
+        function n8() {
+            var n8 = 8
+            var res = document.getElementById('res')
+            res.innerHTML += (`${n8}`)
+        }
+        function n9() {
+            var n9 = 9
+            var res = document.getElementById('res')
+            res.innerHTML += (`${n9}`)
+        }
+        function n0() {
+            var n0 = 0
+            var res = document.getElementById('res')
+            res.innerHTML += (`${n0}`)
+        }
+        function nc() {
+            var res = document.getElementById('res')
+            res.innerHTML = (``)
+        }
+        }
+    </script>
+</body>
+</html>
